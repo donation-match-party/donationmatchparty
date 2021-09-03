@@ -21,6 +21,7 @@ router.all( '/', async function( req, res ) {
         'education': '🏫',
         'environment': '🌍',
         'guns': '🔫',
+        'immigration': '🗺️',
         'medical': '🩺',
         'news': '📰',
         'politics': '🗳',
