@@ -1,0 +1,47 @@
+body{
+  color: $black;
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+}
+
+header{
+  p{
+    font-size: 1.7rem;
+  }
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 10px 0;  
+}
+
+h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.7rem;
+}
+
+pre, code{
+    font-family: "Source Code Pro", monospace;
+}
+
+a{
+  color: $black;
+}
+
+.border-dark{
+  border-color: #37a7cf !important;
+  border-width: 4px !important;
+}

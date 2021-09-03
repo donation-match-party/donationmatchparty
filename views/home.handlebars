@@ -1,0 +1,72 @@
+<div class="container pb-5">
+    <h1 class="mt-5 mb-5">
+        Donation Match<br/>
+        party 💸🎉
+    </h1>
+    <section class="container">
+      <p>Find companies, organizations, and individuals offering to match donations to progressive causes.</p>
+      <p>Follow <a href="https://twitter.com/dmpartytweets">@dmpartytweets</a> for updates.</p>
+    </section>
+
+    <section class="container mt-5">
+
+        <select-pure multiple name="filter" id="filter">
+            {{#each tags}}
+            <option-pure selected value="{{this}}">{{this}}</option-pure>
+            {{/each}}
+        </select-pure>
+    </section>
+
+    <section class="container">
+        <p class="mt-5">
+            <span class="filter select-pure" data-tags="{{tags}}">
+        </p>
+
+        <h2 class="mt-5 mb-5">Currently matching 👀</h2>
+        <table class="table table-responsive table-borderless table-striped table-hover mt-5">
+            <tr>
+                <th width="40"></th>
+                <th width="100">Cause</th>
+                <th class="text-end" width="100">Match total</th>
+                <th width="30">Offer ends</th>
+            </tr>
+            {{#each donations}}
+                {{#if this.is_active }}
+                <tr data-type="{{this.type}}">
+                    <td>
+                        <span class="badge badge-click filter-narrow rounded-pill bg-dark">{{this.type}}</span>
+                    </td>
+                    <td>
+                        <a target="_blank" href="{{this.url}}">{{this.cause}}</a>
+                    </td>
+                    <td class="text-end">{{this.max_match}}</td>
+                    <td><span title="{{this.offer_end_date}}">{{this.offer_end_in}}</span></td>
+                </tr>
+                {{/if}}
+            {{/each}}
+        </table>
+        <h2 class="mt-5 mb-5">Expired matches ⏱️</h2>
+        <table class="table table-responsive table-borderless table-striped table-hover mt-5">
+            <tr>
+                <th width="40"></th>
+                <th width="100">Cause</th>
+                <th class="text-end" width="100">Match total</th>
+                <th width="30">Offer ends</th>
+            </tr>
+            {{#each donations}}
+                {{#unless this.is_active }}
+                <tr data-type="{{this.type}}">
+                    <td>
+                        <span class="badge badge-click filter-narrow rounded-pill bg-dark">{{this.type}}</span>
+                    </td>
+                    <td>
+                        <a target="_blank" href="{{this.url}}">{{this.cause}}</a>
+                    </td>
+                    <td class="text-end">{{this.max_match}}</td>
+                    <td><span title="{{this.offer_end_date}}">{{this.offer_end_in}}</span></td>
+                </tr>
+                {{/unless}}
+            {{/each}}
+        </table>
+    </section>
+</div>

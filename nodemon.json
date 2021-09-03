@@ -1,0 +1,4 @@
+{
+  "verbose": true,
+  "ignore": ["projects", "src", "public", "node_modules", ".git", "tests", "views" ]
+}
