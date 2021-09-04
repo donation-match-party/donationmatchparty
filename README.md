@@ -20,28 +20,3 @@ Site is available at `http://localhost:5026/`.
 gulp
 npm start
 ```
-
-## Notes
-
-### Columns
-
-Name
-Cause
-Type
-Current match
-Max match
-Offer start date
-Offer end date
-URLs
-
-### Fields
-
-name
-cause
-type
-current_match
-max_match
-offer_start_date
-offer_end_date
-urls
-
