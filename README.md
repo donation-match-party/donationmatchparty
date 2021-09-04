@@ -10,7 +10,7 @@ npm install
 cp .env-copy .env
 ```
 
-Site is available at `http://localhost:5025/`.
+Site is available at `http://localhost:5026/`.
 
 ## Development
 
