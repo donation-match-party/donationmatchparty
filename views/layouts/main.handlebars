@@ -33,6 +33,7 @@
     {{#if project}}
     <link rel="stylesheet" type="text/css" href="/css/projects/{{ project }}/styles.min.css">
     {{/if}}
+    {{{head_scripts}}}
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0 mb-5">
@@ -48,6 +49,5 @@
 {{#if project}}
 <script src="/js/projects/{{ project }}/scripts.min.js"></script>
 {{/if}}
-{{> statcounter sc_project=sc_project sc_security=sc_security}}  
 </body>
 </html>
