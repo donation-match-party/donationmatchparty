@@ -12,7 +12,7 @@ function getRequestPaths( req ){
     return {
         project: removeLeadingSlash( req.url.split( '?' )[0].replace( 'projects/', '' ) ),
         appURL: process.env.URL,
-        reqUrlFull: (req.protocol + '://' + req.get('host') + req.originalUrl).replace('http://fourtonfish.com/', 'https://fourtonfish.com/data/')
+        reqUrlFull: (req.protocol + '://' + req.get('host') + req.originalUrl).replace('http://stefanbohacek.com/', 'https://stefanbohacek.com/data/')
     };
 }
 
