@@ -100,7 +100,7 @@ router.all( '/', async function( req, res ) {
     res.render( '../views/home.handlebars', {
         title: process.env.PROJECT_NAME,
         description: process.env.PROJECT_DESCRIPTION,
-        head_scripts: process.env.HEAD_SCRIPTS,
+        footer_scripts: process.env.FOOTER_SCRIPTS,
         appURL: reqPaths.appURL,
         donations: donations,
         // tags: tags.join(','),
