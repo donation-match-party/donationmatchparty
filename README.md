@@ -2,7 +2,7 @@
 
 # donationmatch.party 💸🎉
 
-Find companies, organizations, and individuals offering to match donations to progressive causes.
+Find companies, organizations, and individuals offering to match donations to progressive causes. Follow [@DonationMatchParty](https://mastodon.social/@DonationMatchParty) for updates.
 
 
 ## Installation
